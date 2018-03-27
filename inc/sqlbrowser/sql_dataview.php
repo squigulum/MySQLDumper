@@ -86,7 +86,7 @@ if ($sql_to_display_data == 0)
 }
 else
 {
-	// auch alle Tabellen-Namen werden lowercase! -> das kann zu Problemen fuehren
+	// auch alle Tabellen-Namen werden lowercase -> das kann zu Problemen fuehren
 	// siehe https://dev.mysql.com/doc/refman/5.7/en/identifier-case-sensitivity.html
 	$sql_temp=strtolower($sql['sql_statement']);
 	if (substr($sql_temp,0,7) == 'select ')
